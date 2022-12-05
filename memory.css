@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	display: grid;
+	gap: 2em;
+	min-height: 100vh;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+	font-family: sans-serif;
+}
+h1,
+p {
+	line-height: 1;
+	margin: 0;
+	text-align: center;
+}
+button {
+	cursor: pointer;
+	border: none;
+	padding: 1em 2em;
+	border-radius: 0.33em;
+	background-color: #dea3eda0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: background-color 150ms ease-out;
+}
+button:hover,
+button:focus-visible {
+	background-color: #dea3ed;
+}
+button:active {
+	transition: background-color 50ms ease-out;
+	background-color: lightgreen;
+}
+.cards {
+	width: min-content;
+	display: grid;
+	gap: 0.25rem;
+	justify-content: left;
+	grid-template-columns: repeat(4, 1fr);
+}
+.card {
+	cursor: not-allowed;
+	font-size: 3rem;
+	font-family: sans-serif;
+	width: 1.25em;
+	height: 1.25em;
+	padding: 0.25em;
+	background-color: #dea3ed;
+	text-align: center;
+	border-radius: 0.33em;
+	transition: color 5ms ease-out, transform 100ms ease-out,
+		background-color 100ms ease-out;
+}
+.card.hidden {
+	cursor: pointer;
+	transition: color 250ms ease-out, transform 100ms ease-out,
+		background-color 100ms ease-out;
+	color: transparent;
+	outline: 3px white solid;
+	outline-offset: -9px;
+}
+.card.hidden:hover,
+.card.hidden:focus-visible {
+	transform: scale(1.05);
+	background-color: #de83cd;
+}
+.card.found {
+	background-color: #dea3ed40;
+	color: green;
+	outline: 3px #0f0 solid;
+	outline-offset: -9px;
+}

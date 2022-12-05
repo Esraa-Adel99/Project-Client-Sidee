@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(4, 108, 127);
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+#board {
+    width: 350px;
+    height: 350px;
+    border: 2px solid black;
+    
+
+    margin-left: 350px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 115px;
+    height: 115px;
+    border: 0.5px solid lightblue;
+}
+
+
+#pieces {
+    width: 996px;
+    height: 100px;
+    border: 2px solid black;
+
+    
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pieces img {
+    width: 109px;
+    height: 100px;
+    border: 0.5px solid lightblue;
+   
+}
+
+.pic img{
+
+    width: 200px;
+    height: 200px;
+    float: right;
+    
+}
+.pic{
+
+    margin-right: 200px;
+
+}
+.turiesdiv{
+    margin-left: 480px;
+}
+#gameover{
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+
+<header>
+    <nav class="top-naviagation">
+        <ul class="fire_games-nav" role="navigation">
+            <li class="fire_games_logo">
+                <a href="#">
+                    <i class="fas fa-fire"></i> Games
+                </a>
+            </li>
+            <li class="fire_games_search">
+                <input placeholder="Search Games..." />
+                <i class="fas fa-search"></i>
+            </li>
+            <li class="new_games">
+                <a href="#">
+                    <i class="fas fa-fingerprint"></i> New Games
+                </a>
+            </li>
+            <li class="cats">
+                <a href="#">
+                    <i class="fas fa-globe"></i> Categories
+                </a>
+            </li>
+            <li class="register" id="register" onclick="onProgress();">
+                <a href="#">Register</a>
+            </li>
+            <li class="login" id="login" onclick="onProgress();">
+                <a href="#">Log in</a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+    <div class="popular_games">
+        <div class="sports popular-card">
+            <img class="img_container" src="memory.jpg" alt="">
+            <h4 class="game_title">Memory Card</h4>
+            <button class="download_button" href="#" onclick="Memory()">
+                <i class="fas fa-download"></i> Play Now
+            </button>
+        </div>
+       
+        <div class="girls popular-card">
+            <img class="img_container" src="puzzle.jpg" alt="">
+            <h4 class="game_title">Puzzle</h4>
+            <button class="download_button" href="#" onclick="Puzzle()">
+                <i class="fas fa-download"></i> Play Now
+            </button>
+        </div>
+       
+        <div class="fighting popular-card">
+            <img class="img_container" src="Tetris.jpg" alt="">
+            <h4 class="game_title">Tetris</h4>
+            <button class="download_button" href="#" onclick="Tetris()">
+                <i class="fas fa-download"></i> Play Now
+            </button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>  
+</html>
